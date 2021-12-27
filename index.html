@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>shooting game</title>
+  </head>
+  <body>
+    <div class="gameBoard">
+      <form action="./app.js" method="GET" class="formContainer">
+        <h1>Shooting Game</h1>
+        <div>
+          <input type="text" placeholder="Player 1 Name" id="playerOneName" />
+          <input type="text" placeholder="Player 2 Name" id="playerTwoName" />
+        </div>
+        <p>Tip: Click player img have fun!</p>
+        <button class="submit">Start</button>
+      </form>
+
+      <div class="main unActive">
+        <div class="player">
+          <div class="score">
+            <div>
+              Health:
+              <p class="changeHealth p1Health">100</p>
+            </div>
+            <div>
+              <p class="p1Name"></p>
+              :
+              <p class="p1Score">0</p>
+            </div>
+          </div>
+          <div class="container person1">
+            <img
+              src="https://cdn.pixabay.com/photo/2021/10/19/13/12/squid-game-6723533__340.png"
+              alt="player 1"
+            />
+          </div>
+        </div>
+
+        <div class="result">
+          <h1 class="status">Round 1</h1>
+          <button id="restart">Restart</button>
+        </div>
+
+        <div class="player">
+          <div class="score">
+            <div>
+              Health:
+              <p class="changeHealth p2Health">100</p>
+            </div>
+            <div>
+              <p class="p2Name"></p>
+              :
+              <p class="p2Score">0</p>
+            </div>
+          </div>
+          <div class="container person2">
+            <img
+              src="https://cdn.pixabay.com/photo/2017/02/01/11/33/assets-2029818__340.png"
+              alt="player 2"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
